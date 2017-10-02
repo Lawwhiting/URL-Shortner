@@ -8,13 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 <body>
-  
-    <% if flash[:shortened_id].present? %>
-    <p class='shortened-link'>
-      <%= link_to url_url(flash[:shortened_id]) %>
-      Thanks for stopping bye!
-    </p>
-    <% end %>
+
 
 <%= yield %>
 

@@ -9,7 +9,7 @@ end
 ruby '2.4.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-
+gem 'sqlite3' #gem to use in development environment
 gem 'pg'  #gem to use in production environment
 # to run the server
 gem 'sinatra'
