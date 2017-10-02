@@ -14,7 +14,8 @@ class UrlsController < ApplicationController
 
   def show
     @shortened_url = Url.find(params[:id])
-    p @shortened_url.url
+    p @shortened_url
+    redirect_to (@shortened_url.url)
   end
 
 end

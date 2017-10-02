@@ -9,7 +9,7 @@
 
     <p>
       <%= form.label :url, "Long URL:" %>
-      <%= form.text_field :url %>
+      <%= form.url_field :url, placeholder: "http://google.com" %>
     </p>
 
     <% if @shortened_url.errors[:url].any? %>
